@@ -1,0 +1,113 @@
+/* Init ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+body{
+    background-color: #FCFCFC;
+    overflow-x: hidden;
+}
+
+h2{
+    font-family: 'Raleway', 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+p, li{
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    max-width: 600px;
+}
+
+.container{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+#header{
+    margin-bottom: 100px;
+}
+
+.navbar-brand{
+    display: block;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+#my-logo{
+    height: 45px;
+    width: auto;
+}
+
+#main-menu{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main-menu li{
+    display: inline;
+    margin: 0px 10px
+}
+
+/* Intro ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+#intro-p, #intro-p p{
+    text-align: center;
+    margin: auto;
+}
+
+#web-icons{
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+#intro-p hr{
+    margin: 50px 0px;
+}
+
+/* Titles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+.title-outer{
+    text-align: center;
+    margin-bottom: 50px
+}
+
+.title-h2{
+    background-color: #8FD3F4;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    display: inline-block;
+    margin: auto;
+}
+
+.title-h2 h2{
+    background-color: #FCFCFC;
+    margin-bottom: 0;
+    width: inherit;
+    padding-right: 10px;
+}
+
+/* Titles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+#footer{
+    text-align: center;
+    color: #FCFCFC;
+    background-color: #72B1D0;
+    padding: 25px;
+}
+
+#footer p{
+    margin-bottom: 0px;
+}
+
+/* Media Q's ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+@media screen and (max-width: 567px){
+    #header{
+        margin-bottom: 50px;
+    }
+
+    #intro-p hr{
+        margin: 25px 0px;
+    }
+}
