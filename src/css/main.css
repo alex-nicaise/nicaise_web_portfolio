@@ -12,12 +12,21 @@ h2{
 
 p, li{
     font-family: 'Lato', 'Helvetica', sans-serif;
-    max-width: 600px;
 }
 
 .container{
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.p-container{
+    max-width: 600px;
+    margin: auto;
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 /* Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
@@ -69,7 +78,7 @@ p, li{
 
 .title-outer{
     text-align: center;
-    margin-bottom: 50px
+    margin-bottom: 25px
 }
 
 .title-h2{
@@ -87,22 +96,66 @@ p, li{
     padding-right: 10px;
 }
 
-/* Titles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+/* Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
 
 #footer{
     text-align: center;
     color: #FCFCFC;
     background-color: #72B1D0;
     padding: 25px;
+    margin-top: 50px;
 }
 
 #footer p{
-    margin-bottom: 0px;
+    text-align: center;
+    margin: auto auto 0px;
 }
+
+/* Projects ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+.work-row p {
+    text-align: center;
+    margin: 0px auto 50px;
+}
+
+.new-tab{
+    width: 25px;
+    height: 25px;
+    margin: 10px 30px;
+}
+
+.new-tab-button{
+    background-color: #FCFCFC;
+    display: inline-block;
+    margin-left: calc(100% - 85px);
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+    transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.new-tab-button:hover{
+    background-color: #EAEAEA;
+    box-shadow: none;
+}
+
+.project-cols{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 250px;
+    padding: 0px;
+}
+
 
 /* Media Q's ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
 
-@media screen and (max-width: 567px){
+@media screen and (max-width: 767px){
+    .project-cols{
+        margin: 15px 0px;
+    }
+}
+
+@media screen and (max-width: 576px){
     #header{
         margin-bottom: 50px;
     }
