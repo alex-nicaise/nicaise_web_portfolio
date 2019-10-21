@@ -4,7 +4,7 @@ import Logo from "../img/nicaise-logo.png";
 const Header = props => (
     <div id="header">
         <nav className="navbar navbar-light">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
                 <img src={Logo} id="my-logo" alt="Alex Nicaise Logo" />
             </a>
         <ul id="main-menu">
