@@ -1,30 +1,15 @@
 import React from 'react';
+import useSiteMetadata from '../hooks/use-SiteMetadata';
 
-class Footer extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = { 
-            year: 0,
-            name: '' 
-        };
-    }
+const Footer = () => {
 
-    componentDidMount(){
-        this.setState({
-            year: new Date().getFullYear(),
-            name: 'Alexander Nicaise'
-        })
-    }
+    const {author} = useSiteMetadata();
 
-
-    render(){
-
-        return(
-            <div id="footer">
-                <p>{this.state.name} © {this.state.year}. All Rights Reserved.</p>
-            </div>
-        )
-    }
+    return(
+        <div id="footer">
+            <p>{author} © {new Date().getFullYear()}. All Rights Reserved.</p>
+        </div>
+    )
 }
 
 export default Footer;
