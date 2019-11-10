@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Intro from "../components/intro";
 import Title from "../components/title";
 import ProjectContainer from "../components/proj-container";
+import ToolContainer from "../components/tool-container";
 import Footer from "../components/footer";
 
 class Layout extends React.Component {
@@ -16,6 +17,8 @@ class Layout extends React.Component {
                     <Intro />
                     <Title name="Work" />
                     <ProjectContainer />
+                    <Title name="Links" />
+                    <ToolContainer />
                 </div>
                 <Footer />
             </div>
