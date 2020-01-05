@@ -1,0 +1,65 @@
+/* Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+#header{
+    margin-bottom: 100px;
+}
+
+.navbar-brand{
+    display: block;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+#my-logo{
+    height: 45px;
+    width: auto;
+}
+
+#main-menu{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    li{
+        display: inline;
+        margin: 0px 10px;
+    }
+
+    a{
+        color: $primary-font;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+#mm-open{
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    outline: none;
+
+    span{
+        width: 24px;
+        border-top: 2px solid #333;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        display: block; 
+        transition: transform .25s cubic-bezier(0.6, -0.28, 0.735, 0.045); 
+    }
+
+    &.active{
+        span:first-child{
+            transform: translateY(8px) rotate(135deg);
+        }
+
+        span:last-child{
+            transform: translateY(-8px) rotate(-135deg);
+        }
+
+        span:nth-child(2){
+            transform: scale(0);
+        }
+    }
+}

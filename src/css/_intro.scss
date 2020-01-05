@@ -1,0 +1,24 @@
+/* Intro ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+@mixin intro-p(){
+    text-align: center;
+    margin: auto;
+}
+
+#intro-p{
+    @include intro-p();
+
+    p{
+        @include intro-p()
+    }
+
+    hr{
+        margin-top: 50px;
+    }
+
+    #web-icons{
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 25px;
+    }
+}

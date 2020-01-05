@@ -1,0 +1,60 @@
+/* Init ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+$primary-font: #333;
+
+body{
+    background-color: #FCFCFC;
+    overflow-x: hidden;
+}
+
+h2{
+    font-family: 'Raleway', 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+p, li{
+    font-family: 'Lato', 'Helvetica', sans-serif;
+}
+
+.container{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.p-container{
+    display: block;
+    text-align: center;
+    min-width: 100%;
+
+    p{
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@mixin button($border, $background, $font-color, $radius, $padding, $weight){
+    border: 3px solid $border;
+    border-radius: $radius;
+    background-color: $background;
+    color: $font-color !important;
+    font-weight: $weight;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.25);
+    padding: $padding;
+    transition: all .2s ease-in-out;
+}
+
+.gray-btn{
+    @include button(#333, #333, white, 5px, 10px 30px, bold);
+    margin-top: 25px;
+
+    &:hover{
+        border: 3px solid #666;
+        background-color: #666;
+        box-shadow: none;
+    }
+}

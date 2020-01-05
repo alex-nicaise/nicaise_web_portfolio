@@ -1,0 +1,36 @@
+/* Media Q's ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+@media screen and (max-width: 575px){
+    #header{
+        margin-bottom: 50px;
+    }
+
+    #intro-p{
+        hr{
+            margin: 25px 0px;
+        }
+    }
+
+    #main-menu{
+        min-width: 100vw;
+        background-color: #eaeaea;
+        text-align: center;
+        margin-left: -50px;
+        margin-right: -50px;
+        margin-top: 25px;
+        height: 0px;
+        transition: height .25s cubic-bezier(0.2, -0.28, 0.735, 0.045);
+        overflow: hidden;
+
+        a{
+            min-width: 100%;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px; 
+        }
+
+        &.active{
+            height: 100px;
+        }
+    }
+}

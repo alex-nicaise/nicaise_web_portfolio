@@ -16,9 +16,11 @@ class Header extends React.Component {
 
         if (this.state.open === false){
             document.getElementById("main-menu").classList.add("active");
+            document.getElementById("mm-open").classList.add("active");
             this.setState({ open: true });
         } else {
             document.getElementById("main-menu").classList.remove("active");
+            document.getElementById("mm-open").classList.remove("active");
             this.setState({ open: false });
         }
     }
@@ -37,7 +39,7 @@ class Header extends React.Component {
                 </button>
                 <ul id="main-menu">
                     <a href={Resume} download><li>Resume</li></a>
-                    <a href="https://github.com/alex-nicaise/nicaise_web_portfolio" ref="noopener noreferrer" target="_blank"><li>Source Code</li></a>
+                    <a href="https://github.com/alex-nicaise/nicaise_web_portfolio" target="_blank" rel="noreferrer noopener"><li>Source Code</li></a>
                 </ul>
             </nav>
         </div>

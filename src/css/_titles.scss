@@ -1,0 +1,22 @@
+/* Titles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+
+.title-outer{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.title-h2{
+    background-color: #8FD3F4;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    display: inline-block;
+    margin: auto;
+
+    h2{
+        background-color: #FCFCFC;
+        margin-bottom: 0;
+        width: inherit;
+        padding-right: 10px;   
+    }
+}
