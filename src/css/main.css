@@ -145,6 +145,28 @@ p, li {
   margin-bottom: 25px;
 }
 
+#intro-grey-button {
+  display: block;
+  background-color: #333;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  margin: 25px auto;
+  width: 100%;
+  max-width: 225px;
+  -webkit-transition: all ease-in-out .15s;
+  transition: all ease-in-out .15s;
+}
+
+#intro-grey-button:hover {
+  background-color: #666;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /* Titles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .title-outer {
   text-align: center;

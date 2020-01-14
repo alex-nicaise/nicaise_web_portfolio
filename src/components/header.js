@@ -14,15 +14,7 @@ class Header extends React.Component {
     handleClick(e){
         e.preventDefault();
 
-        if (this.state.open === false){
-            document.getElementById("main-menu").classList.add("active");
-            document.getElementById("mm-open").classList.add("active");
-            this.setState({ open: true });
-        } else {
-            document.getElementById("main-menu").classList.remove("active");
-            document.getElementById("mm-open").classList.remove("active");
-            this.setState({ open: false });
-        }
+        this.state.open === false ? this.setState({ open: true }) : this.setState({ open: false })
     }
 
     render() {
@@ -32,12 +24,12 @@ class Header extends React.Component {
                 <a className="navbar-brand" href="/">
                     <img src={Logo} id="my-logo" alt="Alex Nicaise Logo" />
                 </a>
-                <button id="mm-open" className="d-block d-sm-none" onClick={this.handleClick}>
+                <button id="mm-open" className={this.state.open ? "d-block d-sm-none active" : "d-block d-sm-none"} onClick={this.handleClick}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <ul id="main-menu">
+                <ul id="main-menu" className={this.state.open ? "active" : ""}>
                     <a href={Resume} download><li>Resume</li></a>
                     <a href="https://github.com/alex-nicaise/nicaise_web_portfolio" target="_blank" rel="noreferrer noopener"><li>Source Code</li></a>
                 </ul>

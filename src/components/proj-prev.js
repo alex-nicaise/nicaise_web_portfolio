@@ -6,7 +6,7 @@ const Project = props => (
         <div className="col-12 project-cols" 
         style={{ backgroundImage: "url(" + props.url + ")"}}>
             <div className="new-tab-button">
-                <img className="new-tab" src={tabIcon}></img>
+                <img className="new-tab" src={tabIcon} alt=""></img>
             </div>
         </div>
     </a>
