@@ -1,6 +1,6 @@
 import React from "react";
 import webIcons from "../img/nicaise-web-icons.png";
-import Resume from "../docs/Nicaise_Resume_2020.pdf";
+import Resume from "../docs/Nicaise_Resume_2020c.pdf";
 
 const Intro = props => (
     <div id="intro-p">

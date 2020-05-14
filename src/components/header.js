@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../img/nicaise-logo.png";
-import Resume from "../docs/Nicaise_Resume_2020.pdf";
+import Resume from "../docs/Nicaise_Resume_2020c.pdf";
 
 class Header extends React.Component {
     constructor(props){
